@@ -55,3 +55,6 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "iterm2",      "1.0.4"
+github "chrome",      "1.1.2"
