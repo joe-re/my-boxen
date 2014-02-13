@@ -58,3 +58,4 @@ github "xquartz",    "1.1.0"
 
 github "iterm2",      "1.0.4"
 github "chrome",      "1.1.2"
+github "macvim_kaoriya", "1.0.0", :repo => "boxelly/puppet-macvim_kaoriya"

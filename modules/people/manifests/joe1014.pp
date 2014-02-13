@@ -1,6 +1,7 @@
 class people::joe1014 {
   # 自分の環境で欲しいresourceをincludeする
   include iterm2::stable
+  include macvim_kaoriya
 
   $home     = "/Users/${::luser}"
   $src      = "${home}/src"
