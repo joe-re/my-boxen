@@ -29,6 +29,9 @@ class people::joe1014 {
     'KeyRemap4MacBook':
       source   => "https://pqrs.org/macosx/keyremap4macbook/files/KeyRemap4MacBook-9.2.0.dmg",
       provider => pkgdmg;
+    'SimpleCap':
+      source   => "http://xcatsan.com/simplecap/download/SimpleCap-1.2.1.zip",
+      provider => compressed_app;
   }
 
 }
