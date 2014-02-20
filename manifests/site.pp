@@ -88,3 +88,10 @@ node default {
     target => $boxen::config::repodir
   }
 }
+# NodeJS stuff
+class { 'nodejs::global':
+    version => 'v0.10'
+}
+nodejs::module { 'yo': node_version => 'v0.10' }
+nodejs::module { 'grunt-cli': node_version => 'v0.10' }
+nodejs::module { 'bower': node_version => 'v0.10' }
