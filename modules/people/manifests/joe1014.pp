@@ -34,5 +34,27 @@ class people::joe1014 {
       source   => "http://xcatsan.com/simplecap/download/SimpleCap-1.2.1.zip",
       provider => compressed_app;
   }
+  # NodeJS stuff
+  class { 'nodejs::global':
+          version => 'v0.10'
+  }
+  nodejs::module { 'yo': node_version => 'v0.10' }
+  nodejs::module { 'grunt-cli': node_version => 'v0.10' }
+  nodejs::module { 'bower': node_version => 'v0.10' }
 
+  ruby::gem {
+      "bundler":
+          gem => 'bundler',
+          ruby => '2.0.0-p247'
+  }
+  ruby::gem {
+      "sass":
+          gem  => 'sass',
+          ruby => '2.0.0-p247'
+  }
+  ruby::gem {
+      "compass":
+          gem => 'compass',
+          ruby => '2.0.0-p247'
+  }
 }
