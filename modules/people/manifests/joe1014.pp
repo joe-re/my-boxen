@@ -24,6 +24,11 @@ class people::joe1014 {
     require => Repository[$dotfiles],
   }
   package {
+    [
+      'git-flow'
+    ]:
+  }
+  package {
     'Kobito':
       source   => "http://kobito.qiita.com/download/Kobito_v1.8.7.zip",
       provider => compressed_app;
